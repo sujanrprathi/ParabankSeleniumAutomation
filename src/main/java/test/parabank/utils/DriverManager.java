@@ -22,7 +22,9 @@ public class DriverManager {
         if (driver.get()==null){
             if (Objects.equals(browser, "chrome")){
                 ChromeOptions options=new ChromeOptions();
-                options.addArguments("--window-size=1920,5000");
+                options.addArguments("--headless=new");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--window-size=1920,1080");
                 options.addArguments("--force-device-scale-factor=1");
                 options.addArguments("--high-dpi-support=1");
                 ChromeDriverService service = new ChromeDriverService.Builder()
