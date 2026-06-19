@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build & Test (Headless)') {
             steps {
-                bat 'mvn clean test -Dheadless=true'
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml -Dheadless=true'
             }
         }
 
