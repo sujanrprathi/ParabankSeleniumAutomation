@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/sujanrprathi/parabank-automation.git'
+                    url: 'https://github.com/sujanrprathi/ParabankSeleniumAutomation.git'
             }
         }
 
