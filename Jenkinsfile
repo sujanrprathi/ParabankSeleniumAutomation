@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build & Test (Headless)') {
             steps {
-                sh 'mvn clean test -Dheadless=true'
+                bat 'mvn clean test -Dheadless=true'
             }
         }
 
